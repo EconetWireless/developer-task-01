@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is JAX-WS RI 2.2.9-b130926.1035 svn-revision#5f6196f2b90e9460065a4c2f4e30e065b245e51e. --><xs:schema xmlns:tns="http://service.soap.in.econetwireless.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://service.soap.in.econetwireless.com/">
+
+<xs:element name="creditSubscriberAccount" type="tns:creditSubscriberAccount"></xs:element>
+
+<xs:element name="creditSubscriberAccountResponse" type="tns:creditSubscriberAccountResponse"></xs:element>
+
+<xs:element name="enquireBalance" type="tns:enquireBalance"></xs:element>
+
+<xs:element name="enquireBalanceResponse" type="tns:enquireBalanceResponse"></xs:element>
+
+<xs:complexType name="enquireBalance">
+<xs:sequence>
+<xs:element name="partnerCode" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="msisdn" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="enquireBalanceResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:balanceResponse" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="balanceResponse">
+<xs:sequence>
+<xs:element name="amount" type="xs:double"></xs:element>
+<xs:element name="msisdn" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="narrative" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="responseCode" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="creditSubscriberAccount">
+<xs:sequence>
+<xs:element name="creditRequest" type="tns:creditRequest" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="creditRequest">
+<xs:sequence>
+<xs:element name="amount" type="xs:double"></xs:element>
+<xs:element name="msisdn" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="partnerCode" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="referenceNumber" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="creditSubscriberAccountResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:creditResponse" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="creditResponse">
+<xs:sequence>
+<xs:element name="balance" type="xs:double"></xs:element>
+<xs:element name="msisdn" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="narrative" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="responseCode" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

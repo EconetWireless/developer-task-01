@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>intelligent-network-parent</artifactId>
+        <groupId>com.econetwireless</groupId>
+        <version>1.0.0</version>
+        <relativePath>../intelligent-network-parent/pom.xml</relativePath>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>intelligent-network-api</artifactId>
+    <dependencies>
+        <dependency>
+            <groupId>com.econetwireless</groupId>
+            <artifactId>econet-utils</artifactId>
+            <version>${project.parent.version}</version>
+        </dependency>
+    </dependencies>
+
+
+</project>
