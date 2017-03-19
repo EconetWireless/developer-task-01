@@ -2,6 +2,7 @@ Developer Task 1 - Debug JAVA Application
 
 Task Objective
 The objective of this task is to test the capability of the candidate at:
+
 •	Troubleshooting issues with existing code bases.
 •	Maven multi-module structure
 •	Knowledge of Java SE
