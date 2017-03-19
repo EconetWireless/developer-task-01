@@ -25,8 +25,8 @@ public class EpayResource {
 
     @GetMapping(value = "enquiries/{partnerCode}/balances/{mobileNumber}",
             produces = {MediaType.APPLICATION_JSON_VALUE, MediaType.APPLICATION_XML_VALUE})
-    public AirtimeBalanceResponse enquireAirtimeBalance(@PathVariable("partnerCode") final String partnerCode, @PathVariable("mobileNumber") final String msisdn) {
-        return epayRequestProcessor.enquireAirtimeBalance(partnerCode, msisdn);
+    public AirtimeBalanceResponse enquireAirtimeBalance( final String pCode, @PathVariable("mobileNumber") final String msisdn) {
+        return epayRequestProcessor.enquireAirtimeBalance(pCode, msisdn);
     }
 
     @PostMapping(value = "credits",
