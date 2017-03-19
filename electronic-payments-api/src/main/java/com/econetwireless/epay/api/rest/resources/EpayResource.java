@@ -17,7 +17,6 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("resources/services")
 public class EpayResource {
 
-    @Autowired
     private EpayRequestProcessor epayRequestProcessor;
 
 
