@@ -15,7 +15,6 @@ The objective of this task is to test the capability of the candidate at:
 This application has been deliberately bugged in various ways. Your task is to find each bug or logic problem
 and fix it.
 
-Pull this project from Gitbub :
 Pre-requisites
 1.	You need Java JDK 1.8
 2.	Have maven installed on your machine (Maven 3 +)
